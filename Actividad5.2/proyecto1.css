@@ -1,0 +1,120 @@
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #263238;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12), 0 1.5px 3px #ccc;
+    padding: 32px;
+}
+
+h1,
+h2 {
+    color: #276ef1;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    color: #3c4858;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px 12px;
+    border: 1.5px solid #d1d9e6;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-left: 12px;
+    flex: 1;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #276ef1;
+    background: #eef4fd;
+}
+
+button {
+    background: linear-gradient(90deg, #276ef1 70%, #37c3fc 100%);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 1.06rem;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 6px #276ef12a;
+    transition: background 0.3s, transform 0.15s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #1d52ba 70%, #37c3fc 100%);
+    transform: translateY(-2px) scale(1.025);
+}
+
+#mensaje {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    min-height: 1.5em;
+}
+
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.success {
+    color: #16a085;
+    font-weight: bold;
+}
+
+#tablaProductos {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fafcff;
+    margin-top: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px #d8e7fa85;
+}
+
+#tablaProductos th,
+#tablaProductos td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1.5px solid #e6e8ed;
+}
+
+#tablaProductos th {
+    background: #276ef1;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+#tablaProductos tr:last-child td {
+    border-bottom: none;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo de Datos en JavaScript</title>
+    <!-- Vinculamos el archivo de estilos (opcional) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #2e86de;
+        }
+
+        #contenedor-lista {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            min-height: 50px;
+        }
+
+        .error {
+            color: #e74c3c;
+            margin-top: 5px;
+        }
+
+        .botones {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-right: 8px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Manejo de Datos en JavaScript</h1>
+
+    <!-- Formulario para añadir elementos -->
+    <form id="form-agregar">
+        <input type="text" id="input-elemento" placeholder="Ingresa un elemento">
+        <button type="submit">Agregar</button>
+    </form>
+    <div class="error" id="mensaje-error"></div>
+
+    <!-- Botones de acciones con la lista -->
+    <div class="botones">
+        <button id="btn-eliminar-primero">Eliminar primero</button>
+        <button id="btn-eliminar-ultimo">Eliminar último</button>
+        <button id="btn-ordenar">Ordenar alfabéticamente</button>
+    </div>
+
+    <!-- Contenedor donde se muestra la lista -->
+    <div id="contenedor-lista"></div>
+
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

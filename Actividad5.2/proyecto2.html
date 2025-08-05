@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La Tienda de Gallardo</title>
+    <link rel="stylesheet" href="proyecto2.css">
+</head>
+
+<body>
+    <h1>Bienvenido a La Tienda Gallardo</h1>
+    <div class="container" id="contenedor"></div>
+
+    <script src="proyecto2.js"></script>
+    <script>
+        const productos = [
+            new Electronicos("Smartphone Z", 849.99, "ElectroMax", "Z-Ultra"),
+            new Electronicos("Auriculares Inalámbricos", 115.50, "SoundBeast", "SB-Wave"),
+            new Ropa("Camisa Casual", 32.90, "L", "Lino"),
+            new Ropa("Pantalón Jogger", 69.00, "M", "Algodón"),
+            new Alimentos("Naranjas Dulces", 4.30, "2025-08-15", true),
+            new Alimentos("Galletas de Avena", 5.75, "2025-09-01", false)
+        ];
+
+        const contenedor = document.getElementById("contenedor");
+        productos.forEach(p => {
+            const div = document.createElement("div");
+            div.className = "card";
+            div.innerHTML = p.mostrarInfo();
+            contenedor.appendChild(div);
+        });
+    </script>
+</body>
+
+</html>
